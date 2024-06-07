@@ -9,19 +9,19 @@ export const initialState: State = {
 
 export const productsInit = createAsyncThunk(
   'products/init',
-  async () => await productsFetchInit()
+  async () => await productsFetchInit(),
 );
 
 const productsSlice = createSlice({
   name: 'products',
   initialState,
   reducers: {},
-  extraReducers(builder: any) {
+  extraReducers(builder) {
     builder
-      .addCase(productsInit.fulfilled, (state: any, action: any) => {
+      .addCase(productsInit.fulfilled, (state, action) => {
         state.products = action.payload;
       })
-      .addCase(productsInit.rejected, (state: any, action: any) => {
+      .addCase(productsInit.rejected, (state, action) => {
         state.error = action.error.message;
       });
   },

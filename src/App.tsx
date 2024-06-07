@@ -5,12 +5,14 @@ import { useAppDispatch } from './store/stor';
 import { productsInit } from './store/Products/ProductsSlice';
 import Layout from './components/Layout/Layout';
 import { router } from './components/Configs/router';
+import { articlesInit } from './store/Articles/ArticlesSlice';
 
 function App(): React.JSX.Element {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
     dispatch(productsInit());
+    dispatch(articlesInit());
   });
   return (
     <Layout>

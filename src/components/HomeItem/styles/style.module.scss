@@ -18,5 +18,11 @@
     display: flex;
     justify-content: space-between;
     color: #a18a68;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &_title {
+    margin: 0 auto;
   }
 }

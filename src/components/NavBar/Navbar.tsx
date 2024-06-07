@@ -19,7 +19,7 @@ function Navbar() {
         <div className={s.content_pages}>
           <Link to='/'>Shop</Link>
           <Link to='/'>News</Link>
-          <Link to='/'>Blog</Link>
+          <Link to='/blog'>Blog</Link>
           <img className={s.pages_icon} src={iconLine} alt='поиск' />
         </div>
         <div className={s.content_menu}>

@@ -14,7 +14,7 @@ function HomeItem({ product }: { product: Product }): React.JSX.Element {
       <p className={s.component_title}>{product.title}</p>
       <div className={s.component_price}>
         <p>{product.price}</p>
-        <BaseButton type='button'>Подробнее</BaseButton>
+        <BaseButton type='button'>Details</BaseButton>
       </div>
     </div>
   );
