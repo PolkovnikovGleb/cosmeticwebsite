@@ -1,0 +1,26 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  max-height: 350px;
+  //   border: 1px solid red;
+
+  &_img {
+    height: 200px;
+    width: 500px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 6px;
+  }
+
+  &_element {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  }
+}
+
+.element {
+  &_title {
+    font-size: 14px;
+  }
+}
