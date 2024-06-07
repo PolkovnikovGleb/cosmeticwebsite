@@ -1,0 +1,24 @@
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &__header {
+    margin: 16px 0 64px;
+  }
+}
+
+.content {
+  &_caption {
+    margin-bottom: 39px;
+  }
+
+  &_products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 55px;
+    margin-bottom: 250px;
+  }
+}

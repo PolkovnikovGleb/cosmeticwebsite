@@ -1,0 +1,22 @@
+.component {
+  max-width: 377px;
+  max-height: 472px;
+  //   border: 1px solid red;
+  box-sizing: border-box;
+  &_img {
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    max-width: 377px;
+    max-height: 380px;
+    border: 1px solid black;
+
+    p {
+      font-size: 20px;
+    }
+  }
+  &_price {
+    display: flex;
+    justify-content: space-between;
+    color: #a18a68;
+  }
+}
