@@ -1,8 +1,31 @@
 .blog {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  gap: 30px;
-  margin: 16px 0 64px;
+  flex-direction: column;
+  gap: 36px;
+  margin: 113px 0 64px;
+  font-family: 'DM Sans';
+
+  &_title {
+    font-size: 33px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  &__body {
+    display: flex;
+    gap: 39px;
+  }
+}
+
+.body {
+  &_filter {
+  }
+
+  &_posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }

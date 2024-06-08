@@ -1,26 +1,29 @@
-.article {
+.post {
   display: flex;
   flex-direction: column;
-  max-height: 350px;
+  max-height: 488px;
+  max-width: 450px;
   //   border: 1px solid red;
 
   &_img {
-    height: 200px;
-    width: 500px;
+    height: 300px;
+    width: 450px;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 6px;
+    margin-bottom: 22px;
   }
 
   &_element {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 50px;
+    margin-bottom: 64px;
   }
 }
 
 .element {
   &_title {
-    font-size: 14px;
+    font-size: 20px;
+    max-width: 400px;
   }
 }
