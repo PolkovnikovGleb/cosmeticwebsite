@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   max-height: 42px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 17px;
 
   &__content {
     display: flex;
