@@ -1,4 +1,4 @@
-.component {
+.product {
   max-width: 377px;
   max-height: 472px;
   //   border: 1px solid red;
@@ -11,16 +11,18 @@
     border: 1px solid black;
   }
 
+  &_title {
+    margin: 0 auto;
+    height: 60px;
+  }
+
   &_price {
     display: flex;
     justify-content: space-between;
     color: #a18a68;
     align-items: center;
     margin: 0 auto;
-  }
-
-  &_title {
-    margin: 0 auto;
+    height: 40px;
   }
 }
 
