@@ -17,8 +17,8 @@ function Navbar() {
       </div>
       <div className={s.navbar__content}>
         <div className={s.content_pages}>
-          <Link to='/'>Shop</Link>
-          <Link to='/'>News</Link>
+          <Link to='/shop'>Shop</Link>
+          <Link to='/news'>News</Link>
           <Link to='/blog'>Blog</Link>
           <img className={s.pages_icon} src={iconLine} alt='поиск' />
         </div>
