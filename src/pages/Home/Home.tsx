@@ -16,11 +16,11 @@ function Home(): React.JSX.Element {
       <div className={s.home__header}>
         <img className={s.header_img} src={imgHeder} alt='главный банер' />
       </div>
-      <div className={s.content}>
-        <div className={s.content_caption}>
-          <h3>Товары</h3>
+      <div className={s.home__body}>
+        <div className={s.home__body_title}>
+          <h3>Products</h3>
         </div>
-        <div className={s.content_products}>
+        <div className={s.home__body_products}>
           {products.map((product: Product) => (
             <HomeItem key={product.id} product={product} />
           ))}

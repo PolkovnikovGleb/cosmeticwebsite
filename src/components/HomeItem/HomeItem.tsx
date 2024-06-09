@@ -5,16 +5,12 @@ import BaseButton from '../Ui/BaseButton/baseButton';
 
 function HomeItem({ product }: { product: Product }): React.JSX.Element {
   return (
-    <div className={s.component}>
-      <img
-        className={s.component_img}
-        src={product.image}
-        alt='фото продукта'
-      />
-      <p className={s.component_title}>{product.title}</p>
-      <div className={s.component_price}>
+    <div className={s.product}>
+      <img className={s.product_img} src={product.image} alt='фото продукта' />
+      <p className={s.product_title}>{product.title}</p>
+      <div className={s.product_price}>
         <p>{product.price}</p>
-        <BaseButton type='button'>Details</BaseButton>
+        <BaseButton type='button'>Reade More</BaseButton>
       </div>
     </div>
   );

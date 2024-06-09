@@ -2,23 +2,26 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 64px;
 
   &__header {
     margin: 16px 0 64px;
   }
-}
 
-.content {
-  &_caption {
-    margin-bottom: 39px;
-  }
-
-  &_products {
+  &__body {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 55px;
-    margin-bottom: 250px;
+    flex-direction: column;
+
+    &_title {
+      font-size: 33px;
+      font-family: 'DM Sans';
+    }
+
+    &_products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 55px;
+    }
   }
 }
