@@ -1,6 +1,6 @@
-import { Article } from '../type/typeArticle';
+import { Post } from '../type/typePost';
 
-export const articleFetchInit = async (): Promise<Article[]> => {
+export const postsFetchInit = async (): Promise<Post[]> => {
   try {
     const result = await fetch('https://fakestoreapi.com/products?limit=4');
     if (!result.ok) {
@@ -9,7 +9,7 @@ export const articleFetchInit = async (): Promise<Article[]> => {
     const data = await result.json();
     return data;
   } catch (error) {
-    console.error('Error fetching article:', error);
+    console.error('Error fetching posts:', error);
     throw error;
   }
 };

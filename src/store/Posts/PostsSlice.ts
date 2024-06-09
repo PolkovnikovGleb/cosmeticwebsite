@@ -1,27 +1,27 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { State } from './state';
-import { articleFetchInit } from '../../api/apiArticles';
+import { postsFetchInit } from '../../api/apiPosts';
 
 export const initialState: State = {
-  articles: [],
+  posts: [],
   error: '',
 };
 
-export const articlesInit = createAsyncThunk(
-  'articles/init',
-  async () => await articleFetchInit(),
+export const postsInit = createAsyncThunk(
+  'posts/init',
+  async () => await postsFetchInit(),
 );
 
 const articlesSlice = createSlice({
-  name: 'articles',
+  name: 'posts',
   initialState,
   reducers: {},
   extraReducers(builder) {
     builder
-      .addCase(articlesInit.fulfilled, (state, action) => {
-        state.articles = action.payload;
+      .addCase(postsInit.fulfilled, (state, action) => {
+        state.posts = action.payload;
       })
-      .addCase(articlesInit.rejected, (state, action) => {
+      .addCase(postsInit.rejected, (state, action) => {
         state.error = action.error.message;
       });
   },
