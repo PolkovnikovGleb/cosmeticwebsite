@@ -1,9 +1,9 @@
 import React from 'react';
 import s from './styles/style.module.scss';
-import { RootState } from '@reduxjs/toolkit/query';
 import { useSelector } from 'react-redux';
 import BlogItem from '../../components/BlogItem/BlogItem';
 import { Post } from '../../type/typePost';
+import { RootState } from '../../store/stor';
 
 function BlogPage(): React.JSX.Element {
   const posts = useSelector((store: RootState) => store.posts.posts);

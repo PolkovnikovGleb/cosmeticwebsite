@@ -1,9 +1,10 @@
-.blog {
+.shop {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  gap: 36px;
   margin: 96px 0 250px;
   font-family: 'DM Sans';
+  gap: 36px;
 
   &_title {
     font-size: 33px;
@@ -13,17 +14,10 @@
     margin: 0;
   }
 
-  &__body {
+  &_body {
     display: flex;
-    gap: 39px;
-
-    &_filter {
-    }
-
-    &_posts {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-    }
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 55px;
   }
 }
