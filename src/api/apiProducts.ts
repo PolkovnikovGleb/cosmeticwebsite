@@ -2,7 +2,7 @@ import { Product } from '../type/typeProducts';
 
 export const productsFetchInit = async (): Promise<Product[]> => {
   try {
-    const result = await fetch('https://fakestoreapi.com/products');
+    const result = await fetch('https://fakestoreapi.com/products?limit=9');
     if (!result.ok) {
       throw new Error(`HTTP error! Status: ${result.status}`);
     }
