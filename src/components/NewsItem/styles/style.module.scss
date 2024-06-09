@@ -1,0 +1,16 @@
+.news {
+  &__component {
+    &_img {
+      width: 450px;
+      max-height: 250px;
+      border: 1px solid black;
+      border-radius: 6px;
+    }
+
+    &_element {
+      &_title {
+        font-size: 20px;
+      }
+    }
+  }
+}

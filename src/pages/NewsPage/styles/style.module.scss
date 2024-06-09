@@ -1,0 +1,16 @@
+.news {
+  margin: 113px 0 64px;
+  font-family: 'DM Sans';
+
+  &_title {
+    font-size: 33px;
+  }
+
+  &_body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+  }
+}

@@ -6,6 +6,7 @@ import { productsInit } from './store/Products/ProductsSlice';
 import Layout from './components/Layout/Layout';
 import { router } from './components/Configs/router';
 import { articlesInit } from './store/Articles/ArticlesSlice';
+import { newsInit } from './store/News/NewsSlice';
 
 function App(): React.JSX.Element {
   const dispatch = useAppDispatch();
@@ -13,7 +14,9 @@ function App(): React.JSX.Element {
   useEffect(() => {
     dispatch(productsInit());
     dispatch(articlesInit());
+    dispatch(newsInit());
   });
+
   return (
     <Layout>
       <Routes>

@@ -9,7 +9,7 @@ export const productsFetchInit = async (): Promise<Product[]> => {
     const data = await result.json();
     return data;
   } catch (error) {
-    console.error('Error fetching album:', error);
+    console.error('Error fetching product:', error);
     throw error;
   }
 };

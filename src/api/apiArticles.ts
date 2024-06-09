@@ -9,7 +9,7 @@ export const articleFetchInit = async (): Promise<Article[]> => {
     const data = await result.json();
     return data;
   } catch (error) {
-    console.error('Error fetching album:', error);
+    console.error('Error fetching article:', error);
     throw error;
   }
 };
