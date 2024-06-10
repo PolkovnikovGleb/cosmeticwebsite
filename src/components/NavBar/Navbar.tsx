@@ -29,7 +29,7 @@ function Navbar() {
           <Link to='/'>
             <img src={iconShop} alt='корзина' />
           </Link>
-          <Link to='/'>
+          <Link to='/account'>
             <img src={iconUser} alt='кабинет пользователя' />
           </Link>
         </div>
